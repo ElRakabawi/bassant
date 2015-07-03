@@ -1,0 +1,43 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:400,500);
+@import url(http://fonts.googleapis.com/css?family=ArabicDroidKufi:400,500);
+
+
+*{
+	padding:0;
+	margin:0;
+}
+
+body{
+	background: #ff4252;
+	padding: 0;
+	margin: 0;
+}
+
+a{
+	text-decoration: none;
+	color:#666;
+}
+	a:hover{
+		color:#999;
+	}
+p{
+	line-height: 2em;
+	margin:0 0 20px;
+	text-align: center;
+}
+
+.wrap{
+	max-width: 600px;
+	margin:150px auto;
+}
+
+.type-wrap{
+	margin:10px auto;
+	padding:20px;
+	padding-right: 20px;
+}
+#typed {
+	font-size: 24px;
+	color: #fff;
+	font-family: Droid arabic kufi;
+}

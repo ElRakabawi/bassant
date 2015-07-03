@@ -1,0 +1,20 @@
+{
+  "name": "bassant",
+  "version": "0.1.0",
+  "authors": [
+    "elrakabawi <mselrakabawi@gmail.com>"
+  ],
+  "description": "a pretty letter for someone i care about.",
+  "main": "index.html",
+  "keywords": [
+    "bethoven"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

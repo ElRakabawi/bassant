@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="js/jquery.js" type="text/javascript"></script>
+    <script src="js/typed.js" type="text/javascript"></script>
+    <script>
+    $(function(){
+
+        $("#typed").typed({
+            strings: ["رسالة من بيتهوفن، لحبيبته المجهولة.", "آه يا حبيبتي،، إنك دائماً معي .. فحيث أكون تكونين، </br>سأعمل بجهد على أن نعيش معا و يالها من حياة ..  </br>إن قلبي زاخر بالعواطف و لكن تنتابني لحظات أشعر فيها أنني لا أحسن الكلام </br> تشجعي و كوني ثابتة على عهدك لي فأنتِ كنزي الثمين ..  </br>حياتي و ملاكي! <h5>حبيبك المُخلص، لودفيج بيتهوفن</h5>","بيتهوفن عاش طول حياته وحيد، متجوزش و حياته</br> عُبارة عن قِصة بائسة. و أنا مش عايز أبقى زيُه.</br> <h5>صديقك المُخلص.</h5><h5>تلاته يوليو ألفين و خمستاشر</h5>"],
+            typeSpeed: 40,
+            backDelay: 4000,
+            loop: false,
+            contentType: 'html', // or text
+            // defaults to false for infinite loop
+            loopCount: false,
+            callback: function(){ foo(); },
+            resetCallback: function() { newTyped(); }
+        });
+
+        $(".reset").click(function(){
+            $("#typed").typed('reset');
+        });
+
+    });
+
+    function newTyped(){ /* A new typed object */ }
+
+    function foo(){ console.log("Callback"); }
+
+    </script>
+    <link href="cascade/main.css" rel="stylesheet"/>
+    <style>
+        /* code for animated blinking cursor */
+        .typed-cursor{
+            opacity: 1;
+            font-weight: 100;
+            color: #fff;
+            -webkit-animation: blink 0.7s infinite;
+            -moz-animation: blink 0.7s infinite;
+            -ms-animation: blink 0.7s infinite;
+            -o-animation: blink 0.7s infinite;
+            animation: blink 0.7s infinite;
+        }
+        @-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-webkit-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-moz-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-ms-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-o-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wrap">
+        <div class="type-wrap">
+            <span id="typed" style="white-space:pre;"></span>
+        </div>
+    </div>
+</body>
+</html>
