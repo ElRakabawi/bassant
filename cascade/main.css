@@ -1,5 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Ubuntu:400,500);
-@import url(http://fonts.googleapis.com/css?family=ArabicDroidKufi:400,500);
+@import url(http://fonts.googleapis.com/css?family=Droid+Arabic+Kufi);
 
 
 *{
@@ -9,6 +9,7 @@
 
 body{
 	background: #ff4252;
+	font-family: 'Droid Arabic Kufi';
 	padding: 0;
 	margin: 0;
 }
